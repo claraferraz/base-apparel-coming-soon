@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="Assets/images/logo.svg"
+        alt="Logo: pink circle on the right and the brand name: Base Apparel, on the left"
+      />
+    </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <section>
+      <img
+        class="woman-mobile"
+        src="Assets/images/hero-mobile.jpg"
+        alt="woman in front of plants, holding her long bangs, and wearing a salmon shirt"
+      />
+      <div class="desktop">
+        <div class="soon-container">
+          <h1 class="we">We're</h1>
+          <h1 class="coming-soon">coming soon</h1>
+        </div>
+        <div class="description">
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+        <form class="form" action="/" method="get">
+          <input class="email-input" type="text" placeholder="Email Address" />
+          <button class="send-btn" type="submit">
+            <img src="Assets/images/icon-arrow.svg" alt=">" />
+          </button>
+          <img
+            class="error-icon"
+            src="Assets/images/icon-error.svg"
+            alt="error icon"
+          />
+          <p class="error-msg">Please provide a valid email</p>
+        </form>
+      </div>
+      <img
+        class="woman-desktop"
+        src="Assets/images/hero-desktop.jpg"
+        alt="woman in front of plants, holding her long bangs, and wearing a salmon shirt"
+      />
+    </section>
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="https://github.com/claraferraz">Clara Ferraz</a>.
+      </p>
+    </footer>
+    <script src="Assets/JS/main.js"></script>
+  </body>
 </html>
